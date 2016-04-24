@@ -14,15 +14,19 @@
 		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 
 		<div class="about_me ">
-			<?php 
-				the_post_thumbnail();
+		<!-- 	<div class="about_me_feature">
+				<?php the_post_thumbnail(); ?>
+			</div> -->
+			<div class="about_me_content">
+				<?php 
 				the_content();
 
 				wp_link_pages( array(
 					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sanctuary_wk5' ),
 					'after'  => '</div>',
 					) );
-			?>
+			?></div>
+			<div class="clear"></div>
 		</div><!-- .entry-content -->
 		<div class="clear">&nbsp;</div>
 		<section class="slider">

@@ -15,10 +15,7 @@
 
 	<footer>
 			<div class="social_media footer_content">
-				<p class="float_left">FOLLOW ME:</p>
-				<i class="fa fa-twitter-square float_left"></i>
-				<i class="fa fa-instagram float_left"></i>
-				<i class="fa fa-facebook-square float_left"></i>
+				<?php dynamic_sidebar('Left Footer'); ?>
 			</div>
 			<p class=" copyright footer_content">&copy;Copyright 2016 Shannon Cox</p>
 	</footer>

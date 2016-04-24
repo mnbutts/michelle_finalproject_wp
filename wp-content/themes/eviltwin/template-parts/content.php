@@ -9,25 +9,26 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+<article class="main_content" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="blog_post">
+		<header class="entry-header">
 		<?php
 			if ( is_single() ) {
-				the_title( '<h1 class="entry-title">', '</h1>' );
+				the_title( '<h3 class="entry-title">', '</h3>' );
 			} else {
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+				the_title( '<h4 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' );
 			}
 
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php eviltwin_posted_on(); ?>
-		</div><!-- .entry-meta -->
+			<div class="entry-meta date">
+				<?php eviltwin_posted_on(); ?>
+			</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
-	</header><!-- .entry-header -->
+		</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
+		<p><?php
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'eviltwin' ), array( 'span' => array( 'class' => array() ) ) ),
@@ -38,10 +39,12 @@
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'eviltwin' ),
 				'after'  => '</div>',
 			) );
-		?>
+		?></p>
 	</div><!-- .entry-content -->
-
+	</div>
+	
+<!-- 
 	<footer class="entry-footer">
 		<?php eviltwin_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	</footer> --><!-- .entry-footer -->
 </article><!-- #post-## -->

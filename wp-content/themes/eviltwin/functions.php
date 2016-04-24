@@ -112,6 +112,16 @@ function eviltwin_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => 'Left Footer',
+		'id'            => 'left-footer',
+		'description'   => 'Widgets placed here will go in the left column of the footer',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	
 }
 add_action( 'widgets_init', 'eviltwin_widgets_init' );
 
