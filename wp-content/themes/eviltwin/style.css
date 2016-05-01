@@ -164,6 +164,7 @@ h2,
 .widget-title {
 	font-weight: 800;
 	color: #bbb;
+	margin-top: 0;
 }
 
 /*Body*/
@@ -204,14 +205,21 @@ time.updated {
 .read_more_button {
 	border-radius: 0px;
 	border: 1px solid #000;
-	color: #fff;
-	background-color: #000;
+	color: #000;
+	background-color: #fff;
 	position: absolute;
 	left: 50%;
 	bottom: 0;
 	transform: translate(-50%, -50%);
 }
-
+.read_more_button:hover {
+	color: #fff;
+	background-color: #000;
+	-webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
 img {
 	max-width: 100%;
 	max-height: 100%;
@@ -275,26 +283,19 @@ footer {
 	padding: 10px 0px;
 	overflow: auto;
 	clear: both;
-
 }
 .footer_content {
+	font-size: 80%;
+	font-weight: 200;
 	margin: 0;
 	float: left;
 	width: 50%;
 }
-footer p {
-	font-size: 60%;
-	font-weight: 200;
-	margin: 0;
-}
-.float_left {
-	float: left;
-}
-.social_media p,
-footer .fa {
-	padding-right: 5px;
-	font-size: 100%;
+.social_media {
+	width: 50%;
+
 }
 .copyright {
 	text-align: right;
+	padding-top: 20px;
 }

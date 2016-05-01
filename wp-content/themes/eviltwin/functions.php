@@ -140,7 +140,6 @@ function eviltwin_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'eviltwin_scripts' );
-
 /**
  * Implement the Custom Header feature.
  */
