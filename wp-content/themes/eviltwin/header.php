@@ -48,6 +48,7 @@
 				<div class="circle_image feature1" style="background-image: url(http://localhost:8888/wp-content/uploads/2016/04/feature1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover"></div>
 				<div class="circle_image feature2" style="background-image: url(http://localhost:8888/wp-content/uploads/2016/04/feature2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover"></div>
 				<div class="circle_image feature3" style="background-image: url(http://localhost:8888/wp-content/uploads/2016/04/feature3.jpg); background-position: center; background-repeat: no-repeat; background-size: cover"></div>
+			
 		</div>
 		<nav id="site-navigation" class="main-navigation clear" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

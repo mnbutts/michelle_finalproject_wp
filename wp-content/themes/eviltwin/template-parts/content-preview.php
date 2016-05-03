@@ -35,13 +35,14 @@
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
 			the_post_thumbnail();
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'eviltwin' ),
-				'after'  => '</div>',
-			) );
+			// wp_link_pages( array(
+			// 	'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'eviltwin' ),
+			// 	'after'  => '</div>',
+			// ) );
 		?></p>
 	</div><!-- .entry-content -->
-	<button href="<?php the_permalink(); ?>" class="w3-btn main_button read_more_button">Read More</button>
+	
+	 <button href="<?php the_permalink(); ?>" class="w3-btn main_button read_more_button">Read More</button>
 
 	</div>
 	
