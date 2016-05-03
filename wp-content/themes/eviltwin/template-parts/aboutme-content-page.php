@@ -13,11 +13,11 @@
 	<article>
 		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 
-		<div class="about_me ">
+		<div class="aboutme page_container">
 		<!-- 	<div class="about_me_feature">
 				<?php the_post_thumbnail(); ?>
 			</div> -->
-			<div class="about_me_content">
+			<div class="aboutme_content page_content">
 				<?php 
 				the_content();
 

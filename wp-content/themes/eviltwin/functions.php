@@ -140,6 +140,10 @@ function eviltwin_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'eviltwin_scripts' );
+function enqueue_our_required_stylesheets(){
+	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'); 
+}
+add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 /**
  * Implement the Custom Header feature.
  */
