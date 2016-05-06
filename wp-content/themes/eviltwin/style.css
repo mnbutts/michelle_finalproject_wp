@@ -23,27 +23,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Asides
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
+# Html
+# Clearings 
+# Header
+# Font
+# Blog Body 
+# Custom Page
+# Social Media Styling
+# Contact Form
+# Footer
+# Responsive Design
+
 --------------------------------------------------------------*/
-/*html*/
+/*Html*/
 html {
   	box-sizing: border-box;
   	height: auto;
@@ -54,7 +46,7 @@ html {
   box-sizing: inherit;
 }
 
-/*clearings*/
+/*Clearings*/
 .clear {
 	clear: both;
 }
@@ -155,6 +147,7 @@ h2,
 .entry-title,
 .page-title,
 .widget a,
+a.read_more_button,
 .widget-title {
 	font-family: 'Rajdhani', sans-serif;
 }
@@ -173,7 +166,7 @@ h2,
 	margin-bottom: 10px;
 }
 
-/*Body*/
+/*Blog Body*/
 .main_content {
 	width: 70%;
 	float: right;
@@ -184,7 +177,7 @@ h2,
 	padding: 20px 20px 30px;
 	position: relative;
 	overflow: all;
-	height: 100%;
+	height: auto;
 }
 .blog_post h4.entry-title {
 	text-align: left;
@@ -193,6 +186,7 @@ h2,
 .entry-content h3 {
 	margin-bottom: 10px;
 	line-height: 1;
+	height: auto;
 }
 time.updated {
 	display: none;
@@ -205,21 +199,29 @@ time.updated {
 	text-decoration: none;
 }
 .entry-content p {
-	margin-bottom: 10px;
 	line-height: 1.5;
 	font-size: 14px;
 }
-.read_more_button {
+.entry-content img {
+	padding: 5px 0;
+}
+.spacer {
+	padding-bottom: 10px;
+}
+a.read_more_button {
 	border-radius: 0px;
 	border: 1px solid #000;
 	color: #000;
 	background-color: #fff;
 	position: absolute;
 	left: 50%;
-	bottom: 0;
+	bottom: 0px;
 	transform: translate(-50%, -50%);
+	text-decoration: none;
+	padding: 3px;
+	font-size: 80%;
 }
-.read_more_button:hover {
+a.read_more_button:hover {
 	color: #fff;
 	background-color: #000;
 	-webkit-transition: background-color 2s ease-out;
@@ -275,7 +277,7 @@ header img {
 	font-size: 110%;
 	line-height: 2;
 }
-/*Social media styling*/
+/*Social Media Styling*/
 .social_media {
 	margin-top: 4px;
 }
@@ -314,8 +316,7 @@ input[type=submit] {
     cursor: pointer;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
-    
+    transform: translate(-50%, -50%);   
 }
 textarea {
 	resize: none;
@@ -370,7 +371,7 @@ footer {
 	}
 }
 @media only screen and (max-width: 946px) {
-	/* For screen smaller than 900px */
+	/* For screen smaller than 946px */
 	[class*="site-header"] {
 	height: 500px;
 	}
@@ -424,5 +425,5 @@ footer {
 	}
 	[class*="page_container"] {
 	margin: 0;	
-}
+	}
 }
